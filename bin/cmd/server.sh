@@ -12,6 +12,7 @@ OUT_FILE="${ROOT}/run/server.out"
 
 function startServer {
   echo "Starting server"
+  mkdir -p "${ROOT}/run"
   local -r SERVER_CMD="java -jar ${ROOT}/server/target/base-server-${VERSION}.jar"
   nohup ${SERVER_CMD} > "${OUT_FILE}" 2>&1 & echo $! > "${PID_FILE}"
   local -r PID=$(cat "${PID_FILE}")

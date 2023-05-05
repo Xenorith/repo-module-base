@@ -1,4 +1,7 @@
 *.iml
 .idea
 dependency-reduced-pom.xml
+run/
+tarball/
+tarball.tgz
 target

@@ -1,0 +1,7 @@
+pathsToCopy:
+  - bin/cli.sh
+  - bin/cmd
+  - client/target/base-client-${VERSION}.jar
+  - conf
+  - LICENSE
+  - server/target/base-server-${VERSION}.jar
