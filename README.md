@@ -25,9 +25,10 @@ The base repository to demonstrate using git submodules for cross repository dep
 ## Repo components
 
 ## Java protobuf/grpc module
-The `proto/` directory defines a simple [grpc](https://grpc.io/) service using [protobuf](https://protobuf.dev/).
+Java files are under the `base/` directory.
+The `base/proto/` directory defines a simple [grpc](https://grpc.io/) service using [protobuf](https://protobuf.dev/).
 When building the java code through maven, java files are generated from the protobuf files.
-The `server/` and `client/` directories define a simple server and client to demonstrate the use of grpc by importing the generated files.
+The `base/server/` and `base/client/` directories define a simple server and client to demonstrate the use of grpc by importing the generated files.
 
 ## Documentation
 Documentation is tracked in the `docs/` directory.

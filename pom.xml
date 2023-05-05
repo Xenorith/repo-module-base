@@ -35,9 +35,7 @@
   </properties>
 
   <modules>
-    <module>client</module>
-    <module>proto</module>
-    <module>server</module>
+    <module>base</module>
   </modules>
 
   <dependencyManagement>
