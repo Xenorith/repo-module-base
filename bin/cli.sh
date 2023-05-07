@@ -6,7 +6,8 @@ set -euo pipefail
 ###############
 
 . "$(dirname "$0")/cmd/client.sh"
-. "$(dirname "$0")/cmd/server.sh"
+. "$(dirname "$0")/cmd/startServer.sh"
+. "$(dirname "$0")/cmd/stopServer.sh"
 
 # run main function
 ###################
