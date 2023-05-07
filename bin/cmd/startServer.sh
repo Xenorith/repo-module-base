@@ -3,7 +3,7 @@
 set -euo pipefail
 
 . "$(dirname "$0")/cmd/command.sh"
-. "${dirname "$0")/cmd/serverConstants.sh"
+. "$(dirname "$0")/cmd/serverConstants.sh"
 . "${ROOT}/conf/version.sh"
 
 function startServer {
