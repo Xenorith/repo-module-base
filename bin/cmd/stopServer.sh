@@ -12,4 +12,4 @@ function stopServer {
   kill "${PID}"
   echo "Server stopped"
 }
-appendCommand "stopServer" "stopServer" "  startServer \t Stop the grpc server"
+appendCommand "stopServer" "stopServer" "  stopServer \t Stop the grpc server"
