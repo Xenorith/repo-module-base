@@ -17,7 +17,7 @@ public class BaseClient extends AbstractClient {
         System.out.println("My name is BaseClient");
     }
 
-    public void Hello(String firstName, String lastName) {
+    public void Hello(String firstName, String lastName, int id) {
         ManagedChannel channel = ManagedChannelBuilder.forAddress(mHost, mPort)
                 .usePlaintext()
                 .build();
@@ -27,6 +27,7 @@ public class BaseClient extends AbstractClient {
         HelloResponse helloResponse = stub.hello(HelloRequest.newBuilder()
                 .setFirstName(firstName)
                 .setLastName(lastName)
+                .setId(id)
                 .build());
 
         System.out.println(helloResponse);

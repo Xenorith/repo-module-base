@@ -14,6 +14,9 @@ public final class HelloServiceImpl extends HelloServiceGrpc.HelloServiceImplBas
                 .append(request.getFirstName())
                 .append(" ")
                 .append(request.getLastName())
+                .append("(#")
+                .append(request.getId())
+                .append(")")
                 .toString();
 
         HelloResponse response = HelloResponse.newBuilder()
