@@ -5,13 +5,12 @@
     <artifactId>repo-module-base</artifactId>
     <version>100</version>
   </parent>
-  <artifactId>base</artifactId>
+  <artifactId>common</artifactId>
   <packaging>pom</packaging>
-  <name>Base</name>
+  <name>Common</name>
 
   <modules>
-    <module>client</module>
-    <module>server</module>
+    <module>proto</module>
   </modules>
 
   <properties>
